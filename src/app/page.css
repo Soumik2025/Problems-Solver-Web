@@ -1,0 +1,33 @@
+.home-page {
+  height: 100%;
+  width: 100%;
+}
+
+.home-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.home-page-center {
+  height: 100%;
+}
+
+.home-btns {
+  display: flex;
+}
+
+@media all and (max-width: 800px) {
+  .home-btns {
+    flex-direction: column;
+  }
+}
+
+.home-brand {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}

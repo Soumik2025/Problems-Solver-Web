@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --bg-dark-blue: #0e153a;
+  --bg-blue: #3d5af1;
+  --bg-light-blue: #22d1ee;
+  --bg-white: #e2f3f5;
+}
+
+body {
+  color: var(--bg-white);
+  height: 100vh;
+  width: 100%;
+  /* background: linear-gradient(
+    -45deg,
+    #23d5ab,
+    var(--bg-light-blue),
+    var(--bg-blue),
+    var(--bg-dark-blue)
+  ); */
+  background: linear-gradient(-45deg, var(--bg-blue), var(--bg-light-blue));
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  overflow-x: hidden;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+input {
+  outline: none;
+}
+
+.page {
+  height: 80vh;
+  width: 100%;
+}
+
+#id {
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  width: 300px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.my {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
